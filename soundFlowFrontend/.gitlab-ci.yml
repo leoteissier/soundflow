@@ -1,0 +1,58 @@
+stages:
+  - build-docker
+  - deploy
+build-docker-image:
+  image: docker:19.
+  tags:
+    - imgbuilder
+  services:
+    - docker:19.03.8-dind
+  only:
+    - /^(devops)$/
+  stage:
+    build-docker
+  variables:
+    IMG_TAG: "latest"
+  script:
+    - ./ci-cd/ci/builder.sh
+
+build-dev-image:
+  image: docker:19.
+  tags:
+    - imgbuilder
+  services:
+    - docker:19.03.8-dind
+  only:
+    - /^(dev)$/
+  stage:
+    build-docker
+  variables:
+    IMG_TAG: "dev"
+  script:
+    - ./ci-cd/ci/builder.sh
+
+build-docker-image-prod:
+  image: docker:19.03.8
+  tags:
+    - imgbuilder
+  services:
+    - docker:19.03.8-dind
+  only:
+    - /^(master)$/
+  stage:
+    build-docker
+  variables:
+    IMG_TAG: "prod"
+  script:
+    - ./ci-cd/ci/builder.sh
+
+deploy-b2b-backend:
+  stage: deploy
+  script:
+    - /root/b2b-backend-run.sh
+  needs:
+    - build-docker-image-prod
+  only:
+    - /^(master)$/
+  tags:
+    - b2b-backend-l7xoix

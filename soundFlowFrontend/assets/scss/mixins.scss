@@ -1,0 +1,23 @@
+// flex mixins
+@mixin flex($direction, $justify, $align){
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+// width / height mixins
+@mixin w-h($width, $height){
+  width: $width;
+  height: $height;
+}
+
+// background mixins
+@mixin background($background){
+  background: $background;
+}
+
+// border mixins
+@mixin border($width, $style, $color){
+  border: $width $style $color;
+}
+

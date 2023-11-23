@@ -1,0 +1,31 @@
+version: '3.8'
+services:
+  sf-database:
+    container_name: sf-database
+    build:
+      context: ../..
+      dockerfile: database.Dockerfile
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=sf_dev
+      - MYSQL_USER=sf
+      - MYSQL_PASSWORD=sf
+    command: --character-set-server=utf8 --collation-server=utf8_general_ci
+    ports:
+      - '3306:3306'
+    volumes:
+      - /var/lib/mysql
+    networks:
+      - sf-network
+
+  sf-phpmyadmin:
+    container_name: sf-phpmyadmin
+    image: phpmyadmin/phpmyadmin:4.8
+    environment:
+      - PMA_HOSTS=sf-database,rdsserver2.cs9fp8erjbkd.eu-central-1.rds.amazonaws.com
+    ports:
+      - '3005:80'
+    networks:
+      - sf-network
+networks:
+  sf-network:

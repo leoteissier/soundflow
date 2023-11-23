@@ -1,0 +1,1090 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.active {
+  display: block;
+}
+
+.inactive {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-jc-center {
+  justify-content: center;
+}
+
+.flex-jc-sb {
+  justify-content: space-between;
+}
+
+.flex-jc-sa {
+  justify-content: space-around;
+}
+
+.flex-jc-fe {
+  justify-content: flex-end;
+}
+
+.flex-ai-center {
+  align-items: center;
+}
+
+.flex-ai-sb {
+  align-items: flex-start;
+}
+
+.flex-ai-fe {
+  align-items: flex-end;
+}
+
+.flex-ai-stretch {
+  align-items: stretch;
+}
+
+.flex-ai-baseline {
+  align-items: baseline;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.w-90 {
+  width: 90%;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.w-70 {
+  width: 70%;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.w-30 {
+  width: 30%;
+}
+
+.w-20 {
+  width: 20%;
+}
+
+.w-10 {
+  width: 10%;
+}
+
+.w-5 {
+  width: 5%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.h-90 {
+  height: 90%;
+}
+
+.h-80 {
+  height: 80%;
+}
+
+.h-70 {
+  height: 70%;
+}
+
+.h-60 {
+  height: 60%;
+}
+
+.h-50 {
+  height: 50%;
+}
+
+.h-40 {
+  height: 40%;
+}
+
+.h-30 {
+  height: 30%;
+}
+
+.h-20 {
+  height: 20%;
+}
+
+.h-10 {
+  height: 10%;
+}
+
+.h-5 {
+  height: 5%;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.m-5 {
+  margin: 5px;
+}
+
+.m-10 {
+  margin: 10px;
+}
+
+.m-15 {
+  margin: 15px;
+}
+
+.m-20 {
+  margin: 20px;
+}
+
+.m-25 {
+  margin: 25px;
+}
+
+.m-t-0 {
+  margin-top: 0;
+}
+
+.m-t-5 {
+  margin-top: 5px;
+}
+
+.m-t-10 {
+  margin-top: 10px;
+}
+
+.m-t-15 {
+  margin-top: 15px;
+}
+
+.m-t-20 {
+  margin-top: 20px;
+}
+
+.m-t-25 {
+  margin-top: 25px;
+}
+
+.m-b-0 {
+  margin-bottom: 0;
+}
+
+.m-b-5 {
+  margin-bottom: 5px;
+}
+
+.m-b-10 {
+  margin-bottom: 10px;
+}
+
+.m-b-15 {
+  margin-bottom: 15px;
+}
+
+.m-b-20 {
+  margin-bottom: 20px;
+}
+
+.m-b-25 {
+  margin-bottom: 25px;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.p-5 {
+  padding: 5px;
+}
+
+.p-10 {
+  padding: 10px;
+}
+
+.p-15 {
+  padding: 15px;
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+.p-25 {
+  padding: 25px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-nowrap {
+  white-space: nowrap;
+}
+
+.text-break {
+  word-break: break-all;
+}
+
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.text-overline {
+  text-decoration: overline;
+}
+
+.text-line-through {
+  text-decoration: line-through;
+}
+
+.text-none {
+  text-decoration: none;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.position-fixed {
+  position: fixed;
+}
+
+.position-static {
+  position: static;
+}
+
+.position-sticky {
+  position: sticky;
+}
+
+.dark-mode {
+  background-color: #000;
+  color: #fff;
+}
+.dark-mode .app {
+  background-color: #191919;
+  color: #fff;
+}
+.dark-mode .app input {
+  background-color: #191919;
+  color: #fff;
+}
+.dark-mode .app input::placeholder {
+  color: #fff;
+}
+.dark-mode .app .control span {
+  color: #fff;
+}
+.dark-mode .app .table.is-hoverable tbody tr:not(.is-selected):hover {
+  background-color: rgba(50, 50, 50, 0.5) !important;
+  cursor: pointer;
+}
+.dark-mode .app .select select {
+  background-color: #191919 !important;
+  color: #fff !important;
+}
+.dark-mode .app .select select option {
+  background-color: #191919 !important;
+  color: #fff !important;
+}
+.dark-mode .app .table tr.is-selected {
+  background-color: transparent;
+  color: #fff;
+}
+.dark-mode .app .table tr.is-selected td {
+  color: #7957d5 !important;
+  font-weight: bold;
+}
+.dark-mode .app .dropdown-menu {
+  background-color: transparent;
+  color: #fff;
+}
+.dark-mode .app .dropdown-menu .dropdown-content {
+  background-color: #191919;
+  color: #fff;
+}
+.dark-mode .app .dropdown-menu a {
+  color: #fff;
+}
+.dark-mode .app .dropdown-menu a:hover {
+  background-color: rgba(50, 50, 50, 0.5);
+  color: #fff;
+}
+.dark-mode .app .pagination a {
+  background-color: #191919;
+  color: #fff;
+}
+.dark-mode .app .pagination .pagination-link.is-current {
+  background-color: #191919;
+  color: #fff;
+}
+.dark-mode .table thead span {
+  color: #fff;
+}
+.dark-mode .table tbody tr {
+  border: 1px solid #7957d5;
+}
+.dark-mode .table tbody td {
+  color: #fff;
+}
+.dark-mode .table tfoot h2 {
+  color: #fff;
+}
+.dark-mode .navbar {
+  background-color: #191919;
+  color: #fff;
+}
+.dark-mode .sidebar {
+  background: #191919;
+  color: #fff;
+}
+.dark-mode .sidebar button {
+  background-color: #191919;
+  color: #fff;
+}
+.dark-mode .formulaire {
+  background-color: #191919;
+  color: #fff;
+}
+.dark-mode .formulaire label {
+  color: #fff;
+}
+.dark-mode .formulaire a:hover {
+  color: #fff;
+}
+.dark-mode .formulaire input {
+  background-color: #191919;
+  color: #fff;
+}
+.dark-mode .modal-card-head {
+  background-color: #191919;
+}
+.dark-mode .modal-card-head p {
+  color: #fff;
+}
+.dark-mode .modal-card-head .delete:before {
+  background-color: #fff;
+}
+.dark-mode .modal-card-head .delete:after {
+  background-color: #fff;
+}
+.dark-mode .modal-card-head .delete:hover {
+  transition: 0.3s ease-in-out;
+  background-color: rgba(50, 50, 50, 0.5);
+}
+.dark-mode .modal-card-body {
+  background-color: #191919;
+}
+.dark-mode .modal-card-body label {
+  color: #fff;
+}
+.dark-mode .modal-card-body input {
+  background-color: #191919;
+  color: #fff;
+}
+.dark-mode .modal-card-body input::placeholder {
+  color: #fff;
+}
+.dark-mode .modal-card-body h1 {
+  color: #fff;
+}
+.dark-mode .modal-card-body .dropdown-content {
+  background-color: #191919;
+  color: #fff;
+}
+.dark-mode .modal-card-body .dropdown-content .dropdown-item {
+  background-color: #191919;
+  color: #fff;
+}
+.dark-mode .modal-card-body .dropdown-content .dropdown-item select {
+  background-color: #191919;
+  color: #fff;
+}
+.dark-mode .modal-card-body .dropdown-content .dropdown-item select option {
+  background-color: #191919;
+  color: #fff;
+}
+.dark-mode .modal-card-body .dropdown-content .dropdown-item .is-selectable {
+  background-color: #191919;
+  color: #fff;
+}
+.dark-mode .modal-card-body .dropdown-content .dropdown-item .is-unselectable {
+  background-color: #191919;
+  color: rgba(100, 100, 100, 0.5);
+}
+.dark-mode .modal-card-body .dropdown-content .dropdown-item .is-selected {
+  background-color: rgba(50, 50, 50, 0.5);
+  color: #7957d5;
+}
+.dark-mode .modal-card-body::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+}
+.dark-mode .modal-card-body::-webkit-scrollbar-thumb {
+  background: #7957d5;
+  border-radius: 10px;
+}
+.dark-mode .modal-card-foot {
+  background-color: #191919;
+  color: #fff;
+}
+.dark-mode .player {
+  background-color: #000;
+  color: #fff;
+}
+.dark-mode .player button {
+  background-color: #fff;
+  color: #000;
+  border: none;
+}
+.dark-mode .player button:hover {
+  border: none;
+}
+.dark-mode .player button:focus {
+  border: none;
+}
+.dark-mode .container {
+  background-color: #191919;
+  color: #fff;
+}
+.dark-mode .container button {
+  background-color: #000;
+  color: #fff;
+  border: #fff solid 1px;
+}
+.dark-mode .container button:hover {
+  background-color: #fff;
+  color: #000;
+  border: #fff solid 1px;
+}
+@media screen and (max-width: 768px) {
+  .dark-mode .player {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+  }
+  .dark-mode .player button {
+    background-color: transparent;
+    color: #fff;
+  }
+}
+
+.light-mode {
+  background-color: #fff;
+  color: #000;
+}
+.light-mode .app {
+  background-color: #ebebeb;
+  color: #000;
+}
+.light-mode .app input {
+  background-color: #ebebeb;
+  color: #000;
+}
+.light-mode .app input::placeholder {
+  color: #000;
+}
+.light-mode .app .control span {
+  color: #000;
+}
+.light-mode .app .table.is-hoverable tbody tr:not(.is-selected):hover {
+  background-color: rgba(200, 200, 200, 0.5) !important;
+}
+.light-mode .app .select select {
+  background-color: #ebebeb !important;
+  color: #000 !important;
+}
+.light-mode .app .select select option {
+  background-color: #ebebeb !important;
+  color: #000 !important;
+}
+.light-mode .app .table tr.is-selected {
+  background-color: transparent;
+  color: #000;
+}
+.light-mode .app .table tr.is-selected td {
+  color: #7957d5 !important;
+}
+.light-mode .app .dropdown-menu {
+  background-color: transparent;
+  color: #000;
+}
+.light-mode .app .dropdown-menu .dropdown-content {
+  background-color: #ebebeb;
+  color: #000;
+}
+.light-mode .app .dropdown-menu a {
+  color: #000;
+}
+.light-mode .app .dropdown-menu a:hover {
+  background-color: rgba(200, 200, 200, 0.5);
+  color: #000;
+}
+.light-mode .app .pagination a {
+  background-color: #ebebeb;
+  color: #000;
+}
+.light-mode .app .pagination .pagination-link.is-current {
+  background-color: #ebebeb;
+  color: #000;
+}
+.light-mode .table thead th span {
+  color: #000;
+}
+.light-mode .table tbody tr {
+  border: 1px solid #7957d5;
+}
+.light-mode .table tbody td {
+  color: #000;
+}
+.light-mode .table tfoot h2 {
+  color: #000;
+}
+.light-mode .navbar {
+  background-color: #ebebeb;
+  color: #000;
+}
+.light-mode .sidebar {
+  background-color: #ebebeb;
+  color: #000;
+}
+.light-mode .sidebar button {
+  background-color: #ebebeb;
+  color: #000;
+}
+.light-mode .formulaire {
+  background-color: #ebebeb;
+  color: #000;
+}
+.light-mode .formulaire label {
+  color: #000;
+}
+.light-mode .formulaire a:hover {
+  color: #000;
+}
+.light-mode .formulaire input {
+  background-color: #ebebeb;
+  color: #000;
+}
+.light-mode .modal-card-head {
+  background-color: #ebebeb;
+}
+.light-mode .modal-card-head p {
+  color: #000;
+}
+.light-mode .modal-card-head .delete:before {
+  background-color: #000;
+}
+.light-mode .modal-card-head .delete:after {
+  background-color: #000;
+}
+.light-mode .modal-card-head .delete:hover {
+  transition: 0.3s ease-in-out;
+  background-color: rgba(200, 200, 200, 0.5);
+}
+.light-mode .modal-card-body {
+  background-color: #ebebeb;
+}
+.light-mode .modal-card-body label {
+  color: #000;
+}
+.light-mode .modal-card-body input {
+  background-color: #ebebeb;
+  color: #000;
+}
+.light-mode .modal-card-body input::placeholder {
+  color: #000;
+}
+.light-mode .modal-card-body h1 {
+  color: #000;
+}
+.light-mode .modal-card-body .dropdown-content {
+  background-color: #ebebeb;
+  color: #000;
+}
+.light-mode .modal-card-body .dropdown-content .dropdown-item {
+  background-color: #ebebeb;
+  color: #000;
+}
+.light-mode .modal-card-body .dropdown-content .dropdown-item select {
+  background-color: #ebebeb;
+  color: #000;
+}
+.light-mode .modal-card-body .dropdown-content .dropdown-item select option {
+  background-color: #ebebeb;
+  color: #000;
+}
+.light-mode .modal-card-body .dropdown-content .dropdown-item .is-selectable {
+  background-color: #ebebeb;
+  color: #000;
+}
+.light-mode .modal-card-body .dropdown-content .dropdown-item .is-unselectable {
+  background-color: #ebebeb;
+  color: rgba(150, 150, 150, 0.5);
+}
+.light-mode .modal-card-body .dropdown-content .dropdown-item .is-selected {
+  background-color: rgba(200, 200, 200, 0.5);
+  color: #7957d5;
+}
+.light-mode .modal-card-body::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+}
+.light-mode .modal-card-body::-webkit-scrollbar-thumb {
+  background: #7957d5;
+  border-radius: 10px;
+}
+.light-mode .modal-card-foot {
+  background-color: #ebebeb;
+  color: #000;
+}
+.light-mode .player {
+  background-color: #fff;
+  color: #000;
+}
+.light-mode .player button {
+  background-color: transparent;
+  color: #000;
+  border: none;
+}
+.light-mode .player button:hover {
+  border: none;
+}
+.light-mode .player button:focus {
+  border: none;
+}
+.light-mode .container {
+  background-color: #ebebeb;
+  color: #000;
+}
+.light-mode .container button {
+  background-color: #fff;
+  color: #000;
+  border: #000 solid 1px;
+}
+.light-mode .container button:hover {
+  background-color: #000;
+  color: #fff;
+  border: #000 solid 1px;
+}
+@media screen and (max-width: 768px) {
+  .light-mode .player {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: #000;
+  }
+}
+
+/* General */
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Noto Sans", sans-serif;
+}
+
+#__nuxt {
+  width: 100%;
+  height: 100%;
+}
+
+#__layout {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  grid-template-rows: 80px 1fr 80px;
+  grid-gap: 10px;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  #app {
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 1fr 60px 60px;
+    grid-gap: 10px;
+  }
+}
+.app {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  padding: 10px 10px 0 10px;
+  border-radius: 8px;
+}
+
+.theme-container {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.theme-container:hover {
+  transform: scale(1.1);
+}
+
+.theme-container:hover {
+  opacity: 0.8;
+}
+
+.shadow-dark {
+  background: linear-gradient(145deg, #23282c, #1e2125);
+  box-shadow: 0 0 23px #1a1d20, 0 0 23px #282d32, inset 0 0 4px #1e2226, inset 0 0 4px #24282c;
+}
+
+.shadow-light {
+  background: #ffffff;
+  box-shadow: 0 0 15px -10px #bbcfda, 0 0 13px #ffffff, inset 0 0 3px rgba(209, 217, 230, 0.35), inset 0 0 3px rgba(255, 255, 255, 0.3);
+}
+
+@keyframes change {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.4);
+  }
+}
+.décale-styler {
+  width: calc(100% - 100px);
+  margin-left: 100px;
+}
+
+.img {
+  object-fit: cover;
+}
+
+.control .input:focus::placeholder {
+  color: #4a4a4a;
+}
+
+table {
+  background-color: transparent !important;
+}
+
+.info-table {
+  transition: none;
+}
+
+.b-table {
+  width: 100%;
+  height: 72vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding-bottom: 10px;
+  padding-right: 5px;
+}
+
+.action {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.action button {
+  margin-left: 10px;
+}
+
+.table tbody tr {
+  cursor: pointer;
+}
+
+.table td, .table th {
+  vertical-align: middle;
+  padding: 0.5em;
+}
+
+.b-table::-webkit-scrollbar {
+  width: 10px;
+}
+
+.b-table::-webkit-scrollbar-thumb {
+  background: #7957d5;
+  border-radius: 10px;
+}
+
+.b-tabs:not(:last-child) {
+  margin-bottom: 0 !important;
+}
+
+.animation-content {
+  min-width: 30%;
+}
+.animation-content .modal-card-head {
+  display: flex;
+  justify-content: space-between;
+}
+.animation-content .modal-card-body {
+  width: 100%;
+  height: 60%;
+  padding: 20px;
+}
+
+.dropdown-menu {
+  width: 100%;
+}
+.dropdown-menu .dropdown-item {
+  padding: 0.5rem 1rem;
+  text-align: start;
+}
+
+.datepicker {
+  width: 100%;
+}
+.datepicker .dropdown-content {
+  width: 100%;
+}
+.datepicker .dropdown-content .dropdown-item {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  text-align: start;
+}
+
+.modal-close {
+  display: none;
+}
+
+.table tbody tr td {
+  border: none;
+}
+.table tbody tr td p {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.dropdown-content {
+  width: 420px;
+}
+.dropdown-content .dropdown-item {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  text-align: start;
+}
+
+.b-tooltip {
+  width: 100%;
+}
+
+table.table {
+  table-layout: fixed;
+}
+
+.ellipsis, .dropdown-item {
+  display: block !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+.b-tooltip.is-top .tooltip-content {
+  left: 0;
+  -webkit-transform: none;
+  transform: none;
+}
+.b-tooltip.is-top .tooltip-content::before {
+  left: 30%;
+}
+
+.has-text-centered .b-tooltip.is-top .tooltip-content {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.b-slider-track .tooltip-content {
+  display: none;
+}
+
+.has-text-centered {
+  max-width: none;
+}
+
+.modal-card-title {
+  margin-right: 10px;
+}
+
+.table-wrapper:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.b-slider-track {
+  height: 5px;
+  background-color: #4d4d4d;
+}
+.b-slider-track:hover .b-slider-thumb-wrapper {
+  display: flex;
+}
+.b-slider-track .b-slider-thumb-wrapper {
+  display: none;
+}
+
+.upload {
+  width: 100%;
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.upload .section {
+  padding: 5rem 3rem;
+}
+
+.is-blocked {
+  color: red;
+}
+
+.disabled-music {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 768px) {
+  .app {
+    grid-column: 1/2;
+    grid-row: 2/4;
+  }
+  .b-table .table-wrapper.has-mobile-cards tr:not([class*=is-]) {
+    background: none;
+  }
+  .b-table .table-wrapper.has-mobile-cards tr:not([class*=is-]):hover {
+    background: none;
+  }
+  .logo {
+    width: 140px !important;
+  }
+  .b-table {
+    width: 100%;
+    height: 70vh;
+  }
+  .b-table td {
+    max-width: 100%;
+    width: 100% !important;
+  }
+  .b-table td p {
+    text-align: right;
+  }
+  .b-table td::before {
+    width: inherit;
+  }
+  .b-table tr {
+    border-radius: 4px;
+  }
+  .b-table th {
+    margin-bottom: 90px;
+  }
+  .action {
+    justify-content: flex-end;
+  }
+  .has-text-centered {
+    max-width: none;
+  }
+  .b-tooltip {
+    width: 80%;
+  }
+  .b-tooltip.is-top .tooltip-content {
+    -webkit-transform: none;
+    left: auto;
+    transform: none;
+    right: 0;
+  }
+  .b-tooltip.is-top .tooltip-content::before {
+    left: 85%;
+  }
+  .has-text-centered .b-tooltip.is-top .tooltip-content {
+    -webkit-transform: none;
+    left: auto;
+    transform: none;
+    right: 0;
+  }
+  .b-table .table-wrapper.has-mobile-cards tr:not(.detail):not(.is-empty):not(.table-footer) td {
+    border: none;
+  }
+  .modal .animation-content {
+    width: 80%;
+  }
+  .top {
+    margin-bottom: 110px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

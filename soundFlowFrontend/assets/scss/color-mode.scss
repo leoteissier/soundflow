@@ -1,0 +1,485 @@
+.dark-mode *, .light-mode * {
+  //transition: 0.3s linear;
+}
+.dark-mode{
+  $backgroud-color : #000;
+  $color : #fff;
+  $bg-color : #191919;
+  $player-color : #000;
+  $primary-color : #7957d5;
+  $secondary-color : #48c78e;
+  $border-color : #fff;
+  $text-color : #fff;
+  $hover-color : rgba(50, 50, 50, 0.5);
+  $hover-color2 : rgba(100, 100, 100, 0.5);
+
+  background-color: $backgroud-color;
+  color: $color;
+  .app{
+    //background: linear-gradient(rgba(121, 87, 213, 0.5), $bg-color 60%);
+    background-color: $bg-color;
+    color: $color;
+    input{
+      background-color: $bg-color;
+      color: $color;
+      &::placeholder{
+        color: $color;
+      }
+    }
+    .control{
+      span{
+        color: $color;
+      }
+    }
+    .table.is-hoverable tbody tr:not(.is-selected):hover {
+      //transition: none;
+      background-color: $hover-color !important;
+      cursor: pointer;
+    }
+    .select select{
+      background-color: $bg-color!important;
+      color: $color!important;
+      option{
+        background-color: $bg-color!important;
+        color: $color!important;
+      }
+    }
+    .table tr.is-selected {
+      background-color: transparent;
+      color: $color;
+      td {
+        color: $primary-color!important;
+        font-weight: bold;
+      }
+    }
+    .dropdown-menu{
+      background-color: transparent;
+      color: $color;
+      .dropdown-content{
+        background-color: $bg-color;
+        color: $color;
+      }
+      a{
+        color: $color;
+        &:hover{
+          background-color: $hover-color;
+          color: $color;
+        }
+      }
+    }
+    .pagination{
+      a{
+        background-color: $bg-color;
+        color: $color;
+      }
+      .pagination-link.is-current{
+        background-color: $bg-color;
+        color: $color;
+      }
+    }
+  }
+  .table{
+    thead{
+      span{
+        //transition: none!important;
+        color: $color;
+      }
+    }
+    tbody{
+      tr{
+        border: 1px solid $primary-color;
+      }
+      td{
+        //transition: none!important;
+        color: $color;
+      }
+    }
+    tfoot{
+      h2{
+        //transition: none!important;
+        color: $color;
+      }
+    }
+  }
+  .navbar{
+    background-color: $bg-color;
+    color: $color;
+  }
+  .sidebar{
+    background: $bg-color;
+    color: $color;
+    button{
+      background-color: $bg-color;
+      color: $color;
+    }
+  }
+  .formulaire{
+    background-color: $bg-color;
+    color: $color;
+    label{
+      color: $color;
+    }
+    a{
+      &:hover{
+        color: $color;
+      }
+    }
+    input{
+      background-color: $bg-color;
+      color: $color;
+    }
+  }
+  .modal-card-head{
+    background-color: $bg-color;
+    p{
+      color: $color;
+    }
+    .delete{
+      &:before{
+        background-color: $color;
+      }
+      &:after{
+        background-color: $color;
+      }
+      &:hover{
+        transition: 0.3s ease-in-out;
+        background-color: $hover-color;
+      }
+    }
+  }
+  .modal-card-body{
+    background-color: $bg-color;
+    label{
+      color: $color;
+    }
+    input{
+      background-color: $bg-color;
+      color: $color;
+      &::placeholder{
+        color: $color;
+      }
+    }
+    h1{
+      color: $color;
+    }
+    .dropdown-content{
+      background-color: $bg-color;
+      color: $color;
+      .dropdown-item{
+        background-color: $bg-color;
+        color: $color;
+        select{
+          background-color: $bg-color;
+          color: $color;
+          option{
+            background-color: $bg-color;
+            color: $color;
+          }
+        }
+        .is-selectable{
+          background-color: $bg-color;
+          color: $color;
+        }
+        .is-unselectable{
+          background-color: $bg-color;
+          color: $hover-color2;
+        }
+        .is-selected{
+          background-color: $hover-color;
+          color: $primary-color;
+        }
+      }
+    }
+    &::-webkit-scrollbar {
+      width: 10px;
+      border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #7957d5;
+      border-radius: 10px;
+    }
+  }
+  .modal-card-foot{
+    background-color: $bg-color;
+    color: $color;
+  }
+  .player{
+    background-color: $player-color;
+    color: $color;
+    button{
+      background-color: $color;
+      color: $player-color;
+      border: none;
+      &:hover{
+        border: none;
+      }
+      &:focus{
+        border: none;
+      }
+    }
+  }
+  .container {
+    background-color: $bg-color;
+    color: $color;
+    button{
+      background-color: $backgroud-color;
+      color: $color;
+      border: $color solid 1px;
+      &:hover{
+        background-color: $color;
+        color: $backgroud-color;
+        border: $color solid 1px;
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .player{
+      background-color: rgba(0, 0, 0, 0.6);
+      color: $color;
+      button {
+        background-color: transparent;
+        color: $color;
+      }
+    }
+  }
+}
+
+// light mode
+.light-mode{
+  $backgroud-color : #fff;
+  $color : #000;
+  $bg-color : #ebebeb;
+  $player-color : #fff;
+  $primary-color : #7957d5;
+  $secondary-color : #48c78e;
+  $border-color : #fff;
+  $text-color : #fff;
+  $hover-color : rgba(200, 200, 200, 0.5);
+  $hover-color2 : rgba(150, 150, 150, 0.5);
+
+  background-color: $backgroud-color;
+  color: $color;
+  .app{
+    //background: linear-gradient(rgba(121, 87, 213, 0.5), $bg-color 40%);
+    background-color: $bg-color;
+    color: $color;
+    input{
+      background-color: $bg-color;
+      color: $color;
+      &::placeholder{
+        color: $color;
+      }
+    }
+    .control{
+      span{
+        color: $color;
+      }
+    }
+    .table.is-hoverable tbody tr:not(.is-selected):hover {
+      //transition: none;
+      background-color: $hover-color !important;
+    }
+    .select select{
+      background-color: $bg-color!important;
+      color: $color!important;
+      option{
+        background-color: $bg-color!important;
+        color: $color!important;
+      }
+    }
+    .table tr.is-selected {
+      background-color: transparent;
+      color: $color;
+      td {
+        color: $primary-color!important;
+      }
+    }
+    .dropdown-menu{
+      background-color: transparent;
+      color: $color;
+      .dropdown-content{
+        background-color: $bg-color;
+        color: $color;
+      }
+      a{
+        color: $color;
+        &:hover{
+          background-color: $hover-color;
+          color: $color;
+        }
+      }
+    }
+    .pagination{
+      a{
+        background-color: $bg-color;
+        color: $color;
+      }
+      .pagination-link.is-current{
+        background-color: $bg-color;
+        color: $color;
+      }
+    }
+  }
+  .table{
+    thead{
+      th{
+        span{
+          //transition: none!important;
+          color: $color;
+        }
+      }
+    }
+    tbody{
+      tr{
+        border: 1px solid $primary-color;
+      }
+      td{
+        //transition: none!important;
+        color: $color;
+      }
+    }
+    tfoot{
+      h2{
+        //transition: none!important;
+        color: $color;
+      }
+    }
+  }
+  .navbar{
+    background-color: $bg-color;
+    color: $color;
+  }
+  .sidebar{
+    background-color: $bg-color;
+    color: $color;
+    button{
+      background-color: $bg-color;
+      color: $color;
+    }
+  }
+  .formulaire{
+    background-color: $bg-color;
+    color: $color;
+    label{
+      color: $color;
+    }
+    a{
+      &:hover{
+        color: $color;
+      }
+    }
+    input{
+      background-color: $bg-color;
+      color: $color;
+    }
+  }
+  .modal-card-head{
+    background-color: $bg-color;
+    p{
+      color: $color;
+    }
+    .delete{
+      &:before{
+        background-color: $color;
+      }
+      &:after{
+        background-color: $color;
+      }
+      &:hover{
+        transition: 0.3s ease-in-out;
+        background-color: $hover-color;
+      }
+    }
+  }
+  .modal-card-body{
+    background-color: $bg-color;
+    label{
+      color: $color;
+    }
+    input{
+      background-color: $bg-color;
+      color: $color;
+      &::placeholder{
+        color: $color;
+      }
+    }
+    h1{
+      color: $color;
+    }
+    .dropdown-content{
+      background-color: $bg-color;
+      color: $color;
+      .dropdown-item{
+        background-color: $bg-color;
+        color: $color;
+        select{
+          background-color: $bg-color;
+          color: $color;
+          option{
+            background-color: $bg-color;
+            color: $color;
+          }
+        }
+        .is-selectable{
+          background-color: $bg-color;
+          color: $color;
+        }
+        .is-unselectable{
+          background-color: $bg-color;
+          color: $hover-color2;
+        }
+        .is-selected{
+          background-color: $hover-color;
+          color: $primary-color;
+        }
+      }
+    }
+    &::-webkit-scrollbar {
+      width: 10px;
+      border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #7957d5;
+      border-radius: 10px;
+    }
+  }
+  .modal-card-foot{
+    background-color: $bg-color;
+    color: $color;
+  }
+  .player{
+    background-color: $player-color;
+    color: $color;
+    button{
+      background-color: transparent;
+      color: $color;
+      border: none;
+      &:hover{
+        border: none;
+      }
+      &:focus{
+        border: none;
+      }
+    }
+  }
+  .container {
+    background-color: $bg-color;
+    color: $color;
+    button{
+      background-color: $backgroud-color;
+      color: $color;
+      border: $color solid 1px;
+      &:hover{
+        background-color: $color;
+        color: $backgroud-color;
+        border: $color solid 1px;
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .player{
+      background-color: rgba(255, 255, 255, 0.6);
+      color: $color;
+    }
+  }
+}
